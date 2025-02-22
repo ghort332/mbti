@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI パーソナルカラー分析</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>MBTI パーソナルカラー分析</h2>
+    <label>MBTI タイプを選択：</label>
+    <select id="mbti-select" multiple>
+        <option value="INFJ">INFJ</option>
+        <option value="INTJ">INTJ</option>
+        <option value="ENFP">ENFP</option>
+        <option value="ENTP">ENTP</option>
+        <option value="INFP">INFP</option>
+        <option value="INTP">INTP</option>
+        <option value="ENTJ">ENTJ</option>
+        <option value="ESTP">ESTP</option>
+    </select>
+    <button onclick="calculateColor()">パーソナルカラーを計算</button>
+    <h3>あなたのパーソナルカラー</h3>
+    <div id="result-color" class="color-box"></div>
+    <script src="script.js"></script>
+</body>
+</html>
