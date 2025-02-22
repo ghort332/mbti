@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MBTI パーソナルカラー分析</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .color-box { width: 100px; height: 100px; display: inline-block; margin: 5px; border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <h2>MBTI パーソナルカラー分析</h2>
+    
+    <label>MBTI タイプを選択（最大6つ）:</label>
+    <select id="mbti-select" multiple>
+        <option value="INFJ">INFJ</option>
+        <option value="INTJ">INTJ</option>
+        <option value="ENFP">ENFP</option>
+        <option value="ENTP">ENTP</option>
+    </select>
+    <button onclick="updateUI()">パーソナルカラーを生成</button>
+
+    <h3>パーソナルカラー</h3>
+    <div id="result-color" class="color-box"></div>
+
+    <h3>還元された心理機能</h3>
+    <p id="result-functions"></p>
+
+    <script src="data.js"></script>
+    <script src="colorCalculation.js"></script>
+    <script src="personalColor.js"></script>
+    <script src="functionAnalysis.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
